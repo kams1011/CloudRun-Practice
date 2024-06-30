@@ -13,7 +13,7 @@ public class HelloController {
 
     @GetMapping("/")
     public ResponseEntity sayHello(){
-        String contents = "Hello world! " + DateTimeFormatter.ofPattern("HH:mm:ss").format(LocalTime.now());
+        String contents = "Hello, world! " + DateTimeFormatter.ofPattern("HH:mm:ss").format(LocalTime.now());
         return ResponseEntity.ok(contents);
     }
 
