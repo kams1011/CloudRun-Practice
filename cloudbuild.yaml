@@ -10,5 +10,3 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
 
-images:
-  - asia-northeast3-docker.pkg.dev/gcr-practice-428008/artifact-registry-practice
