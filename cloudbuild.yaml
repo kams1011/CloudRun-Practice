@@ -1,11 +1,11 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     id: 'build-docker-file'
-    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/gcr-practice-428008/artifact-registry-practice', '.']
+    args: ['build', '-t', 'asia-northeast3-docker.pkg.dev/gcr-practice-428008/artifact-registry-practice/artifact-registry-practice', '.']
 
   - name : 'gcr.io/cloud-builders/docker'
     id: 'push-docker-file-artifact-registry'
-    args: ['push', 'asia-northeast3-docker.pkg.dev/gcr-practice-428008/artifact-registry-practice']
+    args: ['push', 'asia-northeast3-docker.pkg.dev/gcr-practice-428008/artifact-registry-practice/artifact-registry-practice']
 
 options:
   logging: CLOUD_LOGGING_ONLY
