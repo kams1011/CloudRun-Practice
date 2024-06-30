@@ -8,7 +8,7 @@ COPY src src
 RUN chmod +x ./gradlew
 RUN ./gradlew build --exclude-task test
 
-RUN cp ./build/libs/CloudRun-Practice-0.0.1.jar ./app.jar
+RUN cp ./build/libs/practice-0.0.1.jar ./app.jar
 EXPOSE 8080
 
 # Specify the command to run on container start
